@@ -3,6 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
+
     public String inputString() {
         Scanner in = new Scanner(System.in);
         String brugerinput = in.nextLine();
@@ -14,7 +15,7 @@ public class Main {
         while (!in.hasNextInt()) {
             int temp;
             while ()
-            System.out.println("Indsæt venligst et helt tal: \n");
+                System.out.println("Indsæt venligst et helt tal: \n");
             in.nextInt();
 
         }
@@ -29,7 +30,8 @@ public class Main {
         return brugerinput;
     }
 
+
     public static void main(String[] args) {
-        System.out.println(inputInt());
+
     }
 }
