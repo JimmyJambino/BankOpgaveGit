@@ -22,23 +22,22 @@ public class Konto {
 
     public double hæv(double beløb) {
         if(beløb <= this.saldo) {
-            this.saldo -= beløb;
-            return this.saldo;
+           return this.saldo -= beløb;
         } else {
             return -1;
         }
     }
 
     public void overfør(double beløb, Konto konto) {
-        if(beløb+5 <= this.saldo) {
-            hæv(beløb);
-            this.saldo -= 5;
-
+        double gebyr = 5.0;
+        if(beløb + gebyr <= this.saldo) {
+            hæv(beløb+gebyr);
+            konto.setSaldo(beløb);
         }
     }
 
     public int getKontonummer() {
-        return kontonummer;
+        return this.kontonummer;
     }
 
     public void setKontonummer(int kontonummer) {
@@ -46,7 +45,7 @@ public class Konto {
     }
 
     public String getEjernavn() {
-        return ejernavn;
+        return this.ejernavn;
     }
 
     public void setEjernavn(String ejernavn) {
@@ -54,10 +53,10 @@ public class Konto {
     }
 
     public double getSaldo() {
-        return saldo;
+        return this.saldo;
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
+    public void setSaldo(double beløb) {
+        this.saldo += beløb;
     }
 }
