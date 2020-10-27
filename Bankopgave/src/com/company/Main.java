@@ -4,23 +4,14 @@ import java.util.Scanner;
 
 public class Main {
 
-    public String inputString() {
+    public String inputString(String input) {
         Scanner in = new Scanner(System.in);
         String brugerinput = in.nextLine();
         return brugerinput;
     }
 
-    public static int inputInt() {
-        Scanner in = new Scanner(System.in);
-        while (!in.hasNextInt()) {
-            int temp;
-            while ()
-                System.out.println("Indsæt venligst et helt tal: \n");
-            in.nextInt();
+    public static int inputInt(String input) {
 
-        }
-        int brugerinput = in.nextInt();
-        return brugerinput;
     }
 
     public String inputDouble() {
