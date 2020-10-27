@@ -29,14 +29,13 @@ public class Konto {
         }
     }
 
-    public void overfør(double beløb, int kontonummer) {
+    public void overfør(double beløb, Konto konto) {
         if(beløb+5 <= this.saldo) {
             hæv(beløb);
             this.saldo -= 5;
 
         }
     }
-
 
     public int getKontonummer() {
         return kontonummer;
