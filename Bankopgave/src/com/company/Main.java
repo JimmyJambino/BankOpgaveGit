@@ -29,6 +29,8 @@ public class Main {
         String brugerinput = in.nextLine();
         return brugerinput;
     }
+
+
     public static void main(String[] args) {
 
     }
