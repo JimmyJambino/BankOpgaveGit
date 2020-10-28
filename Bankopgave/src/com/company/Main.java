@@ -7,6 +7,7 @@ public class Main {
 
     public static ArrayList<Konto> kontoList = new ArrayList<>();
 
+    // Kan anvendes til ejernavn
     public static String inputString(String prompts) {
         System.out.println(prompts);
         Scanner in = new Scanner(System.in);
@@ -14,6 +15,7 @@ public class Main {
         return brugerinput;
     }
 
+    // kan anvendes til kontonummer
     public static int inputInt(String prompt) {
         System.out.print(prompt);
         int input = 0;
@@ -36,6 +38,7 @@ public class Main {
         return input;
     }
 
+    // anvendes til ethvert beløb
     public static Double inputDouble(String prompt) {
         System.out.print(prompt);
         double input = 0;
