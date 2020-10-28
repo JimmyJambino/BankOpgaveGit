@@ -19,8 +19,9 @@ class KontoTest {
 
     @org.junit.jupiter.api.Test
     void overfør() {
-        assertEquals(590, konto.overfør(5, overførkonto(hæv(5.0))));
-
+        konto.overfør(5, overførkonto);
+        assertEquals(490, konto.getSaldo();
+        assertEquals(505, overførkonto.getSaldo());
     }
 
     @org.junit.jupiter.api.Test
