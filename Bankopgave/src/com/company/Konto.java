@@ -59,4 +59,5 @@ public class Konto {
     public void setSaldo(double beløb) {
         this.saldo += beløb;
     }
+
 }

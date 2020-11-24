@@ -40,7 +40,6 @@ public class Main {
 
     // anvendes til ethvert beløb
     public static Double inputDouble(String prompt) {
-        System.out.print(prompt);
         double input = 0;
         boolean run = true;
         Scanner scan = new Scanner(System.in);
@@ -77,8 +76,8 @@ public class Main {
         }
         System.out.println("Kontoen findes ikke");
         return null;
-
     }
+
 
     public static void main(String[] args) {
 
