@@ -3,6 +3,9 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * @Author Jimmy & Rasmus K.
+ */
 public class Main {
 
     public static ArrayList<Konto> kontoList = new ArrayList<>();

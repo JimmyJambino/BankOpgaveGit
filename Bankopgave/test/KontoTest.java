@@ -14,7 +14,6 @@ class KontoTest {
     @org.junit.jupiter.api.Test
     void hæv() {
         assertEquals(400, konto.hæv(100));
-
     }
 
     @org.junit.jupiter.api.Test
@@ -26,13 +25,14 @@ class KontoTest {
 
     @org.junit.jupiter.api.Test
     void getKontonummer() {
-        assertEquals(1,1);
-
+        konto.setKontonummer(100);
+        assertEquals(100,konto.getKontonummer());
     }
 
     @org.junit.jupiter.api.Test
     void setKontonummer() {
-
+        konto.setKontonummer(100);
+        assertEquals(100,konto.getKontonummer());
     }
 
     @org.junit.jupiter.api.Test
@@ -54,8 +54,8 @@ class KontoTest {
 
     @org.junit.jupiter.api.Test
     void setSaldo() {
-        konto.setSaldo(50);
-
+        konto.setSaldo(50); // setSaldo tilføjer beløbet til saldoen
+        assertEquals(550,konto.getSaldo());
 
     }
 }

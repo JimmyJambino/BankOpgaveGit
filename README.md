@@ -1,2 +1,2 @@
 # BankOpgaveGit
-gitte gir gitter
+Lavet af Jimmy og Rasmus K.
